@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  color: #6c757d;
+}
+h2 {
+  margin-left: 10px;
+}
+h3, p, button, li {
+  margin-left: 20px;
+}

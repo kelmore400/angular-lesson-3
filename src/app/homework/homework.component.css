@@ -1,0 +1,19 @@
+li {
+  cursor: pointer;
+}
+input {
+  margin: 0 10px 0 20px;
+}
+main {
+  margin: 10px;
+}
+footer {
+  background-color: steelblue;
+  height: 200px;
+  margin: 60px 0 0 0;
+}
+footer p {
+  text-align: center;
+  line-height: 200px;
+  color: #dbeeff;
+}

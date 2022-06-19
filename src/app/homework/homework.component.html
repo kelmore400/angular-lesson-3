@@ -1,0 +1,47 @@
+<main>
+  <h1>Lesson 3</h1>
+  <h2>Задание 1 </h2>
+  <p>Создайте массив со строками текста и выведите содержание массива в шаблон виде списка (ol или ul). Добавьте на каждый пункт обработчик, который при нажатии в отдельном элементе в шаблоне будет отображать контент последнего нажатого пункта списка. </p>
+  <h3>Топ-10 найвідоміших у світі українських митців</h3>
+  <ol>
+    <li *ngFor="let item of array" (click)="showItem($event)">
+      {{item}}
+    </li>
+  </ol>
+
+  <ng-template [ngIf]="elementText">
+    <p>{{elementText}}</p>
+  </ng-template>
+
+  <h2>Задание 2 </h2>
+  <p [style.color]="colorParagraph">Создайте четыре тега input с типом radio. Каждый флаг отвечает за свой цвет, который должен задаваться на отдельный элемент в виде фона. К примеру: есть параграф и над ним размещены инпуты, при нажатии на первый - цвет параграфа становится синим, на второй - красным, третий - зеленым, четвертый - золотым. </p>
+    <input type="radio" name="action" id="skyblue" value="skyblue" (click)="addColor($event)"/><label for="skyblue" >Skyblue</label>
+    <input type="radio" name="action" id="tomato" value="tomato" (click)="addColor($event)"/><label for="tomato">Tomato</label>
+    <input type="radio" name="action" id="limegreen" value="limegreen" (click)="addColor($event)"/><label for="limegreen">Limegreen</label>
+    <input type="radio" name="action" id="gold" value="gold" (click)="addColor($event)"/><label for="gold">Gold</label>
+
+  <h2>Задание 3 </h2>
+  <p>Создайте пример, в котором используете все существующие встроенные в Angular пайпы.</p>
+    <h3>DatePipe</h3>
+    <p>{{ actualDate | date : 'full' }}
+
+    <h3>UpperCasePipe</h3>
+    <p>{{ text | uppercase }}</p>
+
+    <h3>LowerCasePipe</h3>
+    <p>{{ text | lowercase }}</p>
+
+    <h3>CurrencyPipe</h3>
+    <p>{{ number | currency }}</p>
+
+    <h3>DecimalPipe</h3>
+    <p>{{ decimal | number: '5.0-10' }}</p>
+
+    <h3>PercentPipe</h3>
+    <p>{{ percent | percent }}</p>
+
+  <h2>Задание 4 </h2>
+  <p>Создайте любой html элемент(ы) и задайте такую логику, что при нажатии на него - он удаляется из DOM дерева.</p>
+  <button (click)="remove($event)">Удали меня!</button>
+</main>
+<footer><p>© 2022 All rights reserved.</p></footer>
